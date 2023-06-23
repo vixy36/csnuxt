@@ -1,13 +1,6 @@
 export default defineNuxtConfig({
-  extends: ['@nuxt-themes/docus'],
-
-  colorMode: {
-    preference: 'dark'
-  },
-
-  content: {
-    highlight: {
-      preload: ['graphql']
-    }
-  }
+	typescript: {
+		shim: false,
+	},
+	modules: ['nuxt-graphql-client'],
 })
